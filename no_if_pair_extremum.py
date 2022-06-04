@@ -25,7 +25,6 @@ class PairExtremum:
 
     def max(self) -> float:
         """Preparation of finding the maximum number"""
-        # self._difference = self.pair[0] - self.pair[1]
         return self._result()
 
     def min(self) -> float:
