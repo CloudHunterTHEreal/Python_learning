@@ -23,10 +23,12 @@ class PairExtremum:
         """Main idea of the solution. Processing and returning."""
         return self.pair[int(bool((self._difference) - my_abs(self._difference)))]
 
+    
     def max(self) -> float:
         """Preparation of finding the maximum number"""
         return self._result()
 
+    
     def min(self) -> float:
         """Preparation of finding the minimum number"""
         self._difference = self.pair[1] - self.pair[0]
