@@ -52,7 +52,7 @@ def rock_paper_scissors():
             else:
                 print('DRAW.')
         except:
-            print('Forbidden choice. You won in this round, sorry!')
+            print('Forbidden choice. Drop score in this round, sorry!')
             wins -= 1
 
     return int(wins / game_turns * 100)
