@@ -86,7 +86,7 @@ def guess_the_number(max_number: int = 5) -> float:
                 attempts -= 1
             else:
                 attempts_record.append(trying2guess)
-                end_of_game = input("Wrong.\nTry again?(Empty Enter - 'Agree', else - quit.): ")
+                end_of_game = input("Wrong.\nTry again?(empty <Enter> - 'Agree', else - quit): ")
                 if end_of_game:
                     print('\nOK not today... Game over!')
                     attempts = max_number + 1
@@ -101,7 +101,7 @@ games = (Game(rock_paper_scissors, 'Rock-scissors-paper'),
 
 def start_the_playground():
     """Main menu"""
-    REQUEST_MESSAGE = '\nEnter game number (1-2 oe empty Enter for exit): '
+    REQUEST_MESSAGE = '\nEnter game number (1-2 or empty <Enter> for exit): '
     total_scores = 0
 
     while True:
