@@ -52,7 +52,7 @@ def rock_paper_scissors():
             else:
                 print('DRAW.')
         except:
-            print('Forbidden choice. Drop score in this round, sorry!')
+            print('Forbidden choice. Scores decreased in this round, sorry!')
             wins -= 1
 
     return int(wins / game_turns * 100)
@@ -63,7 +63,7 @@ def guess_the_number(max_number: int = 5) -> float:
     ---
     Parameters:\n
     max_num: int - Maximum hidden number\n
-    return: scores: float - Gamer`s result scores"""
+    return: scores: float - Gamer result scores"""
     WIN_SHOW = '\n*** CONGRATULATION! BINGO! ***\n'
     attempts = 0
     attempts_record = []
